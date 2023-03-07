@@ -3,71 +3,17 @@
 * {
   padding: 0;
   margin: 0;
-  background-color: black;
-  width: 100%;
-  height: 100%;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
 
-#canvas {
-  width: 100%;
-  height: 100%;
-}
-
-.app {
-  width: 100%;
-}
-.container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  height: 0;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+body {
   color: white;
-  cursor: default;
+  background-color: black;
 }
 
-.container h1 {
-  font-size: 2.5rem;
-  font-weight: 600;
-}
-
-.container p {
-  font-size: 1.2rem;
-  letter-spacing: 1rem;
-  margin-top: 15px;
-}
-
-nav {
-  width: 100% !important;
-  position: absolute;
-  top: 35px;
-  left: 50%;
-  right: 0;
-  height: 0;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  color: white;
-  cursor: default;
-}
-
-nav p {
-  font-size: 1.2rem;
-}
-
-.container h1,
-p,
-a,
-nav,
-li {
-  list-style: none;
-  width: auto;
-  height: auto;
-}
+@import url("./components/header.css");
+@import url("./components/presentation.css");
+@import url("./components/competence.css");
+@import url("./components/projet.css");
+@import url("./components/contact.css");

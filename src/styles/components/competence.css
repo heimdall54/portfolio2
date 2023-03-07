@@ -1,0 +1,71 @@
+.competence {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.competence .content {
+  position: relative;
+  text-align: center;
+  height: 30%;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.competence .content::before {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 150px;
+  background: linear-gradient(45deg, #00ccff, #d400d4);
+  animation: animate 4s linear infinite;
+}
+
+.competence .content::after {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  background-color: white;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(350deg);
+  }
+}
+.competence .content .text-content {
+  z-index: 100;
+  text-align: center;
+  width: 100%;
+  height: 90%;
+  /* padding: 25px; */
+}
+
+.competence .content .text-content h2 {
+  margin-top: 25px;
+}
+
+.text-content .liste {
+  height: 70%;
+
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.liste li {
+  margin: 5px;
+}

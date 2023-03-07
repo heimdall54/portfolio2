@@ -1,3 +1,8 @@
+import Compétence from "./components/competence";
+import Contact from "./components/contact";
+import Header from "./components/header";
+import Presentation from "./components/presentation";
+import Projet from "./components/projet";
 import UseScript from "./hook/useScript";
 import "./styles/index.css";
 
@@ -6,24 +11,12 @@ function App() {
 
   return (
     <div className="App">
-      <canvas id="canvas" />
-      <nav>
-        <li>
-          <p>Présentation</p>
-        </li>
-        <li>
-          <p>Compétence</p>
-        </li>
-        <li>
-          <p>Projet</p>
-        </li>
-        <li>
-          <p>Contact</p>
-        </li>
-      </nav>
-      <div className="container">
-        <h1>Thomas Keim</h1>
-        <p>Développeur Fullstack JS</p>
+      <div className="containert">
+        <Header />
+        <Presentation />
+        <Compétence />
+        <Projet />
+        <Contact />
       </div>
     </div>
   );
