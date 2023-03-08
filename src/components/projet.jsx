@@ -1,6 +1,11 @@
 import { useEffect, useState } from "react";
 import Card from "./card";
 import lador from "../assets/img/lador.JPG";
+import todo from "../assets/img/todolist.PNG";
+import portfolio from "../assets/img/portfolio.PNG";
+import portfolio2 from "../assets/img/portfolio2.PNG";
+import Tilt from "react-vanilla-tilt";
+
 const Projet = () => {
   const [projet, setProjet] = useState([]);
 
@@ -14,19 +19,19 @@ const Projet = () => {
       },
       {
         name: "test1",
-        img: lador,
+        img: todo,
         text: "site crée en react",
         lien: "http://github.com/akantor54",
       },
       {
         name: "test2",
-        img: lador,
+        img: portfolio,
         text: "site crée en react",
         lien: "http://github.com/akantor54",
       },
       {
         name: "test3",
-        img: lador,
+        img: portfolio2,
         text: "site crée en react",
         lien: "http://github.com/akantor54",
       },
@@ -38,7 +43,19 @@ const Projet = () => {
     <div className="projet" id="projet">
       <div className="projet-content">
         {projet.map((item) => (
-          <Card key={item.name} project={item} />
+          <Tilt
+            key={item.name}
+            className="card-titl"
+            options={{
+              glare: true,
+              "max-glare": 1,
+              scale: 1.2,
+              speed: 1000,
+              max: 30,
+            }}
+          >
+            <Card key={item.name} project={item} />
+          </Tilt>
         ))}
       </div>
     </div>

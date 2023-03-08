@@ -14,13 +14,19 @@
   display: flex;
 }
 
+.card-titl {
+  flex: 1;
+  height: 100%;
+  margin: 0 !important;
+  padding: 2.5px !important;
+}
+
 .card {
-  width: 25%;
+  width: 100%;
   height: 100%;
   background-color: #afafaf;
   display: flex;
   flex-direction: column;
-  margin: 0 5px;
 }
 
 .card-image {

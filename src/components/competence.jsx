@@ -9,6 +9,7 @@ const Compétence = () => {
               <li>Language</li>
               <li>HTML/CSS : Bon niveau</li>
               <li>Javascript : Bon niveau</li>
+              <li>Typescript : Niveau correct</li>
             </ul>
             <ul className="lib">
               <li>Library</li>
