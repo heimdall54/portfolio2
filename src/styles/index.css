@@ -7,13 +7,24 @@
   font-family: "Montserrat", sans-serif;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 body {
   color: white;
   background-color: black;
 }
 
 @import url("./components/header.css");
+@import url("./components/nav.css");
 @import url("./components/presentation.css");
 @import url("./components/competence.css");
 @import url("./components/projet.css");
+@import url("./components/services.css");
+@import url("./components/servicecard.css");
 @import url("./components/contact.css");

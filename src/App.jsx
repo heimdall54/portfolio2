@@ -3,6 +3,7 @@ import Contact from "./components/contact";
 import Header from "./components/header";
 import Presentation from "./components/presentation";
 import Projet from "./components/projet";
+import Services from "./components/services";
 import UseScript from "./hook/useScript";
 import "./styles/index.css";
 
@@ -16,6 +17,7 @@ function App() {
         <Presentation />
         <Compétence />
         <Projet />
+        <Services />
         <Contact />
       </div>
     </div>

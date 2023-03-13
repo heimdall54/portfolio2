@@ -1,27 +1,73 @@
+import CardSkill from "./card-skill";
+
 const Compétence = () => {
+  const skills = [
+    {
+      name: "Language",
+      skill: [
+        {
+          lang: "Html/Css",
+          pourcant: "90%",
+          classCss: "pourcant90",
+        },
+        {
+          lang: "Javascript",
+          pourcant: "70%",
+          classCss: "pourcant70",
+        },
+        {
+          lang: "Typescript",
+          pourcant: "50%",
+          classCss: "pourcant50",
+        },
+      ],
+    },
+    {
+      name: "Framework",
+      skill: [
+        {
+          lang: " React",
+          pourcant: "70%",
+          classCss: "pourcant70",
+        },
+        {
+          lang: "NextJS",
+          pourcant: "10%",
+          classCss: "pourcant10",
+        },
+        {
+          lang: "ExpressJS",
+          pourcant: "60%",
+          classCss: "pourcant60",
+        },
+      ],
+    },
+    {
+      name: "Outlis",
+      skill: [
+        {
+          lang: "Git/Github",
+          pourcant: "40%",
+          classCss: "pourcant40",
+        },
+        {
+          lang: "Docker",
+          pourcant: "10%",
+          classCss: "pourcant10",
+        },
+      ],
+    },
+  ];
+
   return (
     <div className="competence" id="competence">
       <div className="content">
         <div className="text-content">
           <h2>Compétence</h2>
           <div className="liste">
-            <ul className="Language">
-              <li>Language</li>
-              <li>HTML/CSS : Bon niveau</li>
-              <li>Javascript : Bon niveau</li>
-              <li>Typescript : Niveau correct</li>
-            </ul>
-            <ul className="lib">
-              <li>Library</li>
-              <li>React : Bon niveau</li>
-              <li>nodeJS : Bon niveau</li>
-              <li>ExpressJS : Bon niveau</li>
-            </ul>
-            <ul className="outils">
-              <li>Outils</li>
-              <li>Git : Niveau correct</li>
-              <li>Docker : En cours</li>
-            </ul>
+            {skills.map((skill) => (
+              <CardSkill key={skill.name} skill={skill} />
+            ))}
           </div>
         </div>
       </div>

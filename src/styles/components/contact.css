@@ -59,6 +59,10 @@ textarea {
   font-weight: bold;
 }
 
+textarea:focus {
+  outline: 2px solid white;
+}
+
 .form-content form button {
   font-family: inherit;
   font-size: 20px;
@@ -95,7 +99,7 @@ button:hover svg {
   transform: translateX(1.2em) rotate(45deg) scale(1.1);
 }
 
-button:hover span {
+button:hover .send {
   transform: translateX(5em);
 }
 
@@ -110,5 +114,24 @@ button:active {
 
   to {
     transform: translateY(-0.1em);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .form-content {
+    width: 100%;
+  }
+
+  .form-content form .input {
+    width: 90%;
+  }
+
+  textarea {
+    width: 90%;
+  }
+
+  .form-content form button {
+    width: 30%;
+    margin: 25px auto;
   }
 }

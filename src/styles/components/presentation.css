@@ -13,13 +13,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
   padding-left: 50px;
   background: linear-gradient(50deg, white 0 77%, black 50% 100%);
 }
 .content {
   width: 60%;
-  /* height: 100%; */
   background-color: white;
   color: black;
 }
@@ -31,4 +29,15 @@
 .content p {
   line-height: 1.5rem;
   letter-spacing: 1.2px;
+}
+
+@media screen and (max-width: 500px) {
+  .rect {
+    width: 100%;
+    background: white !important;
+  }
+
+  .content {
+    width: 100%;
+  }
 }

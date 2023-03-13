@@ -15,6 +15,7 @@
   align-items: center;
   color: white;
   cursor: default;
+  background-color: transparent;
 }
 
 .container h1 {
@@ -28,36 +29,20 @@
   margin-top: 15px;
 }
 
-nav {
-  width: 100% !important;
-  position: absolute;
-  top: 35px;
-  left: 50%;
-  right: 0;
-  height: 0;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  color: white;
-  cursor: default;
-}
-
-nav p {
-  font-size: 1.2rem;
-}
-nav a {
-  font-size: 1.2rem;
-  color: white;
-}
-
 .container h1,
 p,
 a,
 nav,
 li {
-  list-style: none;
   width: auto;
   height: auto;
-  text-decoration: none;
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+    margin-top: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
