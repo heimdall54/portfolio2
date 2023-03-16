@@ -41,6 +41,7 @@ const Projet = () => {
   // name, img, text, lien
   return (
     <div className="projet" id="projet">
+      <h2>Projet</h2>
       <div className="projet-content">
         {projet.map((item) => (
           <Tilt

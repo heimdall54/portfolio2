@@ -63,13 +63,13 @@
   flex-direction: row;
   align-items: center;
   flex-wrap: nowrap;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
   width: 100%;
 }
 
 .text-content .liste .card .skill-name {
   width: 100px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .text-content .liste .card .skill-level {

@@ -32,12 +32,12 @@
 .form-content form .input {
   width: 70%;
   height: 45px;
-  margin: 20px;
+  margin: 15px;
   border: none;
   border-radius: 15px;
   padding: 15px;
   background-color: #e8e8e8;
-  box-shadow: 6px 6px 12px #ffffff, -6px -6px 12px #c5c5c5;
+  box-shadow: 1px 1px 12px #ffffff, -1px -1px 12px #c5c5c5;
   font-size: medium;
   font-weight: bold;
 }
@@ -49,12 +49,12 @@
 textarea {
   width: 70%;
   resize: none;
-  margin: 20px;
+  margin: 15px;
   border: none;
   border-radius: 15px;
   padding: 15px;
   background-color: #e8e8e8;
-  box-shadow: 6px 6px 12px #ffffff, -6px -6px 12px #c5c5c5;
+  box-shadow: 1px 1px 12px #ffffff, -1px -1px 12px #c5c5c5;
   font-size: medium;
   font-weight: bold;
 }
@@ -76,7 +76,7 @@ textarea:focus {
   border-radius: 16px;
   overflow: hidden;
   transition: all 0.2s;
-  margin-top: 25px;
+  margin-top: 15px;
 }
 
 button span {

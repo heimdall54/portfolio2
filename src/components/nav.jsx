@@ -9,7 +9,6 @@ const Nav = () => {
 
   return (
     <nav className={`navbar ${showLinks ? "show-nav" : "hide-nav"}`}>
-      <div className="navbar_logo">Dev</div>
       <ul className="navbar_links">
         <li className="navbar_item slideInDown-1">
           <a

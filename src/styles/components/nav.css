@@ -17,11 +17,17 @@
   display: flex;
   width: 45%;
   justify-content: space-around;
+  margin-left: 3.8rem;
 }
 
 .navbar_link {
-  padding: 0 0.3rem;
+  padding: 0 0.8rem;
   color: inherit;
+}
+.navbar_links a:hover {
+  font-size: 1.2rem;
+
+  font-variation-settings: "wght" 800, "ital" 1, "opsz" 18;
 }
 
 .navbar_burger {
@@ -39,6 +45,7 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
+    height: 60px;
   }
 
   .navbar_links {
@@ -84,7 +91,7 @@
   .navbar_burger {
     display: block;
     position: fixed;
-    top: 1rem;
+    top: 0.5rem;
     right: 1rem;
   }
 

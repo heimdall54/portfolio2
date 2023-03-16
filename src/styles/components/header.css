@@ -24,9 +24,10 @@
 }
 
 .container p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   letter-spacing: 1rem;
   margin-top: 15px;
+  text-align: center;
 }
 
 .container h1,
@@ -38,11 +39,17 @@ li {
   height: auto;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   nav {
     margin-top: 15px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .container p {
+    font-size: 1.3rem;
+    letter-spacing: 0.7rem;
+    margin-top: 15px;
   }
 }

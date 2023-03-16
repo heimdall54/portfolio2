@@ -18,6 +18,11 @@
 }
 .content {
   width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: white;
   color: black;
 }
@@ -27,11 +32,13 @@
 }
 
 .content p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
   line-height: 1.5rem;
   letter-spacing: 1.2px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 767px) {
   .rect {
     width: 100%;
     background: white !important;

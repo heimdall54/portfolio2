@@ -1,4 +1,6 @@
+import { useEffect } from "react";
 import CardSkill from "./card-skill";
+import gsap from "gsap";
 
 const Compétence = () => {
   const skills = [
@@ -58,6 +60,8 @@ const Compétence = () => {
       ],
     },
   ];
+
+  useEffect(() => {});
 
   return (
     <div className="competence" id="competence">

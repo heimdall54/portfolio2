@@ -14,7 +14,7 @@ const Contact = () => {
             type="text"
             placeholder="Entrez le sujet de votre demande"
           />
-          <textarea rows={10} placeholder="Entrez votre demande" />
+          <textarea rows={9} placeholder="Entrez votre demande" />
           <button>
             <div className="svg-wrapper-1">
               <div className="svg-wrapper">
